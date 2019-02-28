@@ -16,6 +16,8 @@
 	"dependencies": {
 		"bcryptjs": "^2.4.3",
 		"body-parser": "^1.18.3",
+		"client": "file:client",
+		"concurrently": "^4.1.0",
 		"express": "^4.16.4",
 		"gravatar": "^1.8.0",
 		"jsonwebtoken": "^8.5.0",
