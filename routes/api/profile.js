@@ -39,12 +39,12 @@ router.get(
 
 //get all profiles
 
-router.post("/all", (req, res) => {
+router.get("/all", (req, res) => {
   const errors = {};
   Profile.find({})
     .populate("user", ["name", "avatar"])
     .then(profiles => {
-      if ("!profiles") {
+      if (!profiles) {
         errors.noprofile = "Profile not found";
         return res.status(404).json(errors);
       }
