@@ -4,7 +4,7 @@ import rootReducer from "./reducers";
 const middleware = [thunk];
 const initialState = {};
 const devTools =
-  process.env.NODE_ENV === "development"
+  process.env.NODE_ENV === "production"
     ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ &&
       window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__()
     : null;
